@@ -1,107 +1,84 @@
 # 🐨 Kojo installieren auf Windows (ohne Admin-Rechte)
 
 Hallo! 😊  
-Hier lernst du Schritt für Schritt, wie du **Kojo** installierst.  
-Du brauchst **keine Admin-Rechte**.
+Hier lernst du Schritt für Schritt, wie du Kojo installierst.
 
 ---
 
 # 📥 Schritt 1: Kojo herunterladen
 
-1. Öffne diesen Link:  
-https://github.com/litan/kojo/releases/download/2.9.34_release/Kojo_2_9_34.zip
+Lade Kojo herunter:  
+👉 [Kojo_2_9_34.zip](https://github.com/litan/kojo/releases/download/2.9.34_release/Kojo_2_9_34.zip)
 
-2. Die Datei wird in deinem **Downloads-Ordner** gespeichert.
-
-So sieht die Seite aus:
-
-![Kojo Download](images/page_1.png)
+Die Datei wird in deinem **Downloads-Ordner** gespeichert.
 
 ---
 
 # ☕ Schritt 2: Java herunterladen
 
-Kojo braucht **Java**, damit es funktioniert.
+Kojo braucht Java. Lade es hier herunter:  
+👉 [microsoft-jdk-21.0.10-windows-x64.zip](https://aka.ms/download-jdk/microsoft-jdk-21.0.10-windows-x64.zip)
 
-1. Öffne diesen Link:  
-https://aka.ms/download-jdk/microsoft-jdk-21.0.10-windows-x64.zip
-
-2. Die Datei wird im **Downloads-Ordner** gespeichert.
-
----
-
-# 📂 Schritt 3: ZIP-Dateien entpacken
-
-1. Gehe in deinen **Downloads-Ordner**
-2. Mache **Rechtsklick** auf die ZIP-Datei
-3. Klicke auf **„Alle extrahieren…“**
+Die Datei wird in deinem **Downloads-Ordner** gespeichert.
 
 So sieht das aus:
 
-![ZIP entpacken](images/page_2.png)
-
-Mache das für:
-
-- Kojo_2_9_34.zip  
-- microsoft-jdk-21.0.10-windows-x64.zip  
+![Downloads](images/02_downloads_folder.png)
 
 ---
 
-# 📁 Schritt 4: Java-Ordner finden
+# 📦 Schritt 3: Kojo ZIP entpacken
 
-Gehe jetzt in diesen Ordner:
+Rechtsklick auf **Kojo_2_9_34.zip**  
+Dann klicke auf **Alle extrahieren…**
 
-Downloads  
-→ microsoft-jdk-21.0.10-windows-x64  
-→ jdk-21.0.10+7  
-→ bin  
-
-Der Pfad sieht so aus:
-
-%USERPROFILE%\Downloads\microsoft-jdk-21.0.10-windows-x64\jdk-21.0.10+7\bin
+![Kojo ZIP](images/03_kojo_zip_rechtsklick.png)
 
 ---
 
-# 🛠 Schritt 5: Kojo starten
+# ☕ Schritt 4: Java ZIP entpacken
 
-Gehe jetzt in:
+Rechtsklick auf **microsoft-jdk-21.0.10-windows-x64.zip**  
+Dann klicke auf **Alle extrahieren…**
 
-Downloads  
-→ Kojo_2_9_34  
-→ Kojo-z  
-→ bin  
-
-So sieht das aus:
-
-![Kojo bin Ordner](images/page_3.png)
-
-Dort findest du:
-
-- kojo.cmd  
-- kojo.exe  
-
-Doppelklicke auf:
-
-kojo.exe  
-
-Wenn alles richtig ist, startet Kojo! 🎉
+![JDK ZIP](images/04_jdk_zip_rechtsklick.png)
 
 ---
 
-# ❓ Wenn es nicht startet
+# 📁 Schritt 5: Kojo-Ordner öffnen
 
-Dann öffne die Datei **kojo.cmd** mit einem Editor.
+Gehe in den Ordner:  
+`%userprofile%\Downloads\Kojo_2_9_34\Kojo-z\bin`
+
+So sieht der Ordner aus:
+
+![Kojo Speicherort](images/06_kojo_bin_pfad.png)
+
+---
+
+# 🛠 Schritt 6: kojo.cmd bearbeiten
+
+Rechtsklick auf **kojo.cmd** → **Im Editor bearbeiten**
+
+![kojo.cmd öffnen](images/07_kojo_exe_start.png)
 
 Dort steht eine Zeile mit einem Java-Pfad.  
-Der Pfad muss zu deinem Java-Ordner passen, zum Beispiel:
+Ersetze den Java-Pfad durch diesen:
 
-call %USERPROFILE%\Downloads\microsoft-jdk-21.0.10-windows-x64\jdk-21.0.10+7\bin\java
+`%USERPROFILE%\Downloads\microsoft-jdk-21.0.10-windows-x64\jdk-21.0.10+7\bin\java`
+
+So sieht das aus:
+
+![kojo.cmd bearbeiten](images/05_kojo_cmd_edit.png)
+
+---
+
+# ▶️ Schritt 7: Kojo starten
+
+Doppelklicke auf **kojo.cmd** im selben Ordner. Kojo startet jetzt mit dem richtigen Java.
 
 ---
 
 # ✅ Fertig!
 
-Super! 🥳  
-Jetzt kannst du mit Kojo programmieren.
-
-Viel Spaß! 🚀
+Jetzt kannst du mit Kojo programmieren! 🎉
