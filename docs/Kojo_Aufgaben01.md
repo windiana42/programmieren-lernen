@@ -1,19 +1,5 @@
 # Programmieren mit Kojo
 
-**5. Klasse**
-
-## Warum Kojo?
-
-Kojo ist eine Implementierung der anfaengerfreundlichen Programmiersprache Logo mit knuffiger Schildkroete, Farben und Parallelisierung. Gleichzeitig ist es auf einer modernen Programmiersprache namens Scala (Weiterentwicklung von Java) aufgebaut und ermoeglicht daher einen stufenlosen Uebergang zu professioneller Softwareentwicklung. Jeder kann damit auf seinem individuellen Niveau arbeiten.
-
-## Installation
-
-https://www.kogics.net/kojo
-
-Der Installer kann ohne Administrationsrechte ausgefuehrt werden und enthaelt eine Java Runtime. Leider ist der Installer nicht signiert. Falls dies die Installation auf einem Windows Computer verhindert gibt es hier eine Installationsanleitung:
-
-https://github.com/windiana42/programmieren-lernen/blob/main/docs/Kojo_Installation_Windows_ohne_Admin.md
-
 ## Aufgaben
 
 ### Aufgabe 1
