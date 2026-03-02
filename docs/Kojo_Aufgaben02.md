@@ -2,7 +2,7 @@
 
 ## Startpunkt ist Aufgabe 3 aus letztem Arbeitsblatt
 
-- Starte die Dokumentation des Befehlsvorats (Menue Werkzeuge)
+- Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
 - Waehle "Live help: On"
 - Suche und teste Schildkroetenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`)
 
@@ -105,7 +105,7 @@ blume(schildkroete2, yellow)
 
 ## Startpunkt ist Aufgabe 4 aus letztem Arbeitsblatt
 
-- Starte die Dokumentation des Befehlsvorats (Menue Werkzeuge)
+- Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
 - Waehle "Live help: On"
 - Waehle ganz oben: "Picture" oder "Picture Transforms"
 - Suche und teste Picture Befehle (z.B. `Picture.rectangle(50,100)`)
