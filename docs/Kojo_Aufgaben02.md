@@ -1,12 +1,12 @@
-# Schildkroetenbefehle
+# Schildkrötenbefehle
 
 ## Startpunkt ist Aufgabe 3 aus letztem Arbeitsblatt
 
 - Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
-- Waehle "Live help: On"
-- Suche und teste Schildkroetenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`)
+- Wähle "Live help: On"
+- Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`)
 
-![Schildkroetenbefehle](images/aufgaben02_01_turtle_commands.png)
+![Schildkrötenbefehle](images/aufgaben02_01_turtle_commands.png)
 
 ### Teste Befehl setSpeed
 
@@ -36,7 +36,7 @@ repeat(3) {
 }
 ```
 
-### Veraendere Schildkroete
+### Verändere Schildkröte
 
 ```scala
 clear()
@@ -77,7 +77,7 @@ repeat(3) {
 }
 ```
 
-### Mehrere Schildkroeten
+### Mehrere Schildkröten
 
 ```scala
 def blume(t:Turtle, c:Color) = runInBackground {
@@ -106,8 +106,8 @@ blume(schildkroete2, yellow)
 ## Startpunkt ist Aufgabe 4 aus letztem Arbeitsblatt
 
 - Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
-- Waehle "Live help: On"
-- Waehle ganz oben: "Picture" oder "Picture Transforms"
+- Wähle "Live help: On"
+- Wähle ganz oben: "Picture" oder "Picture Transforms"
 - Suche und teste Picture Befehle (z.B. `Picture.rectangle(50,100)`)
 - Teste den Unterschied von `clear()` und `cleari()`
 
@@ -124,9 +124,9 @@ draw(Picture.text("Klasse 5", Font("Serif", 30)))
 
 ### Teste Verzerrung und Rotation
 
-- Links von `->` steht die Veraenderung
-- Mehrere Veraenderungen sind durch `*` getrennt
-- Zwischenstaenden kann man mit `val` Namen geben
+- Links von `->` steht die Veränderung
+- Mehrere Veränderungen sind durch `*` getrennt
+- Zwischenständen kann man mit `val` Namen geben
 
 ```scala
 cleari()

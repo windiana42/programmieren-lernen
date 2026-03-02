@@ -4,7 +4,7 @@
 
 ### Aufgabe 1
 
-- Starte das Anfaengertraining (Menü Tools->Beginner Challenges).
+- Starte das Anfängertraining (Menü Tools->Beginner Challenges).
 - Löse Level 1
 - Löse Level 7 und 8: das Quadrat mit und ohne `repeat(4) { ... }`.
 
@@ -28,15 +28,15 @@
 ### Aufgabe 3
 
 - Starte die Dokumentation des Befehlsvorats (Tools->Instruction Palette).
-- Waehle "Live help: On".
+- Wähle "Live help: On".
 - Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`).
 
-![Aufgabe 3 - Schildkroetenbefehle](images/aufgaben01_05_turtle_commands.png)
+![Aufgabe 3 - Schildkrötenbefehle](images/aufgaben01_05_turtle_commands.png)
 
 ### Aufgabe 4
 
 - Starte die Dokumentation des Befehlsvorats (Tools->Instruction Palette).
-- Waehle "Live help: On".
+- Wähle "Live help: On".
 - Suche und teste Picture-Befehle (z.B. `Picture.rectangle(50,100)`).
 - Teste den Unterschied von `clear()` und `cleari()`.
 

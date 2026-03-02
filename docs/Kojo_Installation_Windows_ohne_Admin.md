@@ -81,7 +81,7 @@ Doppelklicke auf **kojo.cmd** im selben Ordner. Kojo startet jetzt mit dem richt
 
 # 🌍 Schritt 8: Sprache auf Englisch umstellen (wichtig)
 
-Damit alle im Kurs dieselben Menues und Begriffe sehen, stellen wir Kojo **immer auf Englisch** um.
+Damit alle im Kurs dieselben Menüs und Begriffe sehen, stellen wir Kojo **immer auf Englisch** um.
 
 Klicke in Kojo auf: **Sprache → Englisch**
 
@@ -89,7 +89,7 @@ Klicke in Kojo auf: **Sprache → Englisch**
 
 ![Kojo neu starten nach Sprachwechsel](images/09_sprache_englisch_neustart.png)
 
-Danach musst du Kojo **selbst schliessen** und **neu starten**.
+Danach musst du Kojo **selbst schließen** und **neu starten**.
 
 ---
 
