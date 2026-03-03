@@ -27,7 +27,7 @@
 
 ### Aufgabe 3
 
-- Starte die Dokumentation des Befehlsvorats (Tools->Instruction Palette).
+- Starte die Dokumentation des Befehlsvorrats (Tools->Instruction Palette).
 - Wähle "Live help: On".
 - Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`).
 
@@ -35,7 +35,7 @@
 
 ### Aufgabe 4
 
-- Starte die Dokumentation des Befehlsvorats (Tools->Instruction Palette).
+- Starte die Dokumentation des Befehlsvorrats (Tools->Instruction Palette).
 - Wähle "Live help: On".
 - Suche und teste Picture-Befehle (z.B. `Picture.rectangle(50,100)`).
 - Teste den Unterschied von `clear()` und `cleari()`.

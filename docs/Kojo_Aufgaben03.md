@@ -1,220 +1,70 @@
-# Schildkrötenbefehle
+# Kojo Aufgabenblatt 3: Picture Graphics
 
-## Startpunkt ist Aufgabe 3 aus letztem Arbeitsblatt
+In diesem Aufgabenblatt arbeitet ihr mit der Kojo-Dokumentation zu [**Picture Graphics**](https://docs.kogics.net/).
 
-- Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
-- Wähle "Live help: On"
-- Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`)
+![Picture Graphics Dokumentation](images/aufgaben03_01_dokumentation_website.png)
 
-![Schildkrötenbefehle](images/aufgaben03_01_turtle_commands.png)
+- Klick auf "Picture Graphics"
+- Klick auf "An introduction to Pictures"
+- Dies sollte Dich zu 
+[Kojo Doku: introduction to Pictures](https://docs.kogics.net/tutorials/pictures-intro.html#picture-creation)
+führen
+- Nutze die Dokumentation um folgende Aufgaben zu lösen
 
-### Teste Befehl setSpeed
+---
+
+## Aufgabe 1: Rechteck
+
+- Ersetze `???` in folgendem Code so, dass ein Rechteck mit 100 x 50 Pixeln gezeichnet wird:
 
 ```scala
-clear()
-setSpeed(fast)
-repeat(36) {
-  repeat(4) {
-    forward(100)
-    left(90)
-  }
-  right(10)
-}
+cleari()
+???
+draw(pic1)
 ```
 
-### Teste Farben
+![Aufgabe 1 Rechteck](images/aufgaben03_02_rectangle.png)
+
+- Teste den Unterschied von `clear()` zu `cleari()`
+
+---
+
+## Aufgabe 2: Drei Rechtecke zeichnen
+
+Erstelle folgende Figur aus drei Rechtecken mit unterschiedlichen Größen, Farben, Drehung und Position:
+
+So soll es ungefähr aussehen:
+
+![Aufgabe 2 Drei Rechtecke](images/aufgaben03_03_flag.png)
+
+---
+
+## Bonusaufgabe: Diese Aufgabe kann auch gelöst werden ohne jede Zeile zu verstehen
+
+- Ersetze `???` in folgendem Programm so, dass das gezeigte Bild entsteht:
 
 ```scala
-clear()
-setBackgroundH(yellow,blue)
-setPenColor(red)
-setFillColor(green)
-setPenThickness(3)
-repeat(3) {
-  forward(100)
-  right(120)
-}
-```
-
-### Verändere Schildkröte
-
-```scala
-clear()
-setSpeed(slow)
-repeat(4) {
-  setCostume(Costume.bat1)
-  forward(50)
-  setCostume(Costume.bat2)
-  forward(50)
-  right(90)
-}
-```
-
-## Fortgeschrittene Themen
-
-### Funktionen
-
-```scala
-def mein_haus() {
-  savePosHe()
-  repeat(5) {
-    left(90)
-    forward(100)
-  }
-  left(45)
-  forward(71)
-  left(90)
-  forward(71)
-  restorePosHe()
-}
-
-clear()
-setSpeed(medium)
-right(90)
-repeat(3) {
-  mein_haus()
-  hop(200)
-}
-```
-
-### Mehrere Schildkröten
-
-```scala
-def blume(t:Turtle, c:Color) = runInBackground {
-  t.setSpeed(slow)
-  t.setPenColor(black)
-  t.setFillColor(c)
-  repeat(4){
-    t.right()
-    repeat(90){
-      t.turn(-2)
-      t.forward(2)
+cleari()
+def funktion_mit_parameter(n: Int): Picture = {
+    if (n < 10) {
+        Picture.rectangle(n, n)
     }
-  }
-  t.invisible()
+    else {
+        picStack(Picture.rectangle(n, n), trans(10, 0) * rot(2) -> funktion_mit_parameter(n - ???))
+    }
 }
-
-cleari()
-val schildkroete1=newTurtle(-200,100)
-val schildkroete2=newTurtle(100,100)
-blume(schildkroete1, green)
-blume(schildkroete2, yellow)
+draw(funktion_mit_parameter(250).withPenColor(blue).withPenThickness(3))
 ```
 
-# Zeichenbefehle
+![Bonusaufgabe Rekursion/Layout](images/aufgaben03_04_recursion.png)
 
-## Startpunkt ist Aufgabe 4 aus letztem Arbeitsblatt
+Tipps:
 
-- Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
-- Wähle "Live help: On"
-- Wähle ganz oben: "Picture" oder "Picture Transforms"
-- Suche und teste Picture Befehle (z.B. `Picture.rectangle(50,100)`)
-- Teste den Unterschied von `clear()` und `cleari()`
-
-![Picture Befehle](images/aufgaben03_02_picture_commands.png)
-
-### Teste Befehl Picture.rectangle
-
-```scala
-cleari()
-val rect = Picture.rectangle(50, 100)
-draw(rect)
-draw(Picture.text("Klasse 5", Font("Serif", 30)))
-```
-
-### Teste Verzerrung und Rotation
-
-- Links von `->` steht die Veränderung
-- Mehrere Veränderungen sind durch `*` getrennt
-- Zwischenständen kann man mit `val` Namen geben
-
-```scala
-cleari()
-val rechteck = Picture.rectangle(50, 50)
-val vollesRechteck =
-  fillColor(lightGray) -> rechteck
-draw(scale(2,1) * rotp(45,0,0) -> vollesRechteck)
-```
-
-### Verschiebe Objekte an ihre Position
-
-```scala
-cleari()
-val koerper = Picture.rectangle(10, 50)
-draw(koerper)
-val kopf = Picture.circle(10)
-draw(trans(5,60) -> kopf)
-val linker_arm = Picture.line(40, 30)
-draw(trans(10,30) -> linker_arm)
-val rechter_arm = Picture.line(-40, 30)
-draw(trans(0,30) -> rechter_arm)
-val bein = picCol(
-  Picture.ellipse(15, 5),
-  trans(10,0)->Picture.ellipse(5, 15)
-)
-draw(trans(-15,-30) -> bein)
-draw(flipY * trans(-25,-30) -> bein)
-```
-
-## Fortgeschrittene Themen
-
-### Schleifen
-
-```scala
-cleari()
-val karte =
-  fillColor(green) -> Picture.rectangle(50, 80)
-for (i <- 1 to 4) {
-  for (j <- 1 to 2) {
-    draw(trans(i*70 - 200,j*100 - 100) -> karte)
-  }
-}
-```
-
-### Animation
-
-```scala
-val auto=Picture.image("/media/car-ride/car1.png")
-cleari()
-draw(auto)
-activateCanvas()
-animate {
-  if (isKeyPressed(Kc.VK_LEFT)) {
-    val pVel = Vector2D(-3, 0)
-    auto.translate(pVel)
-  }
-  if (isKeyPressed(Kc.VK_RIGHT)) {
-    val pVel = Vector2D(3, 0)
-    auto.translate(pVel)
-  }
-}
-```
-
-### Mausclick auf Objekt
-
-```scala
-def zeige_nummer(
-  x: Double, y: Double,
-  mouse_x: Double, mouse_y: Double) {
-  draw(trans(x+20, y+60)
-    -> Picture.text("1", Font("Serif", 30)))
-  draw(trans(mouse_x, mouse_y)
-    -> Picture.ellipse(3,3))
-}
-
-cleari()
-val karte
-  = fillColor(green) -> Picture.rectangle(50, 80)
-for (i <- 1 to 4) {
-  for (j <- 1 to 2) {
-    val x = i*70 - 200
-    val y = j*100 - 100
-    val verschobene_karte = trans(x,y) -> karte
-    verschobene_karte.onMouseClick(
-      (mouse_x, mouse_y)
-      => zeige_nummer(x, y, mouse_x, mouse_y)
-    )
-    draw(verschobene_karte)
-  }
-}
-```
+- Dieses Programm findet ihr in der Dokumentation allerdings mit einem anderen Wert bei ???.
+- Die Funktion `funktion_mit_parameter` hat einen Parameter `n`.
+- `n` steht für eine beliebige Pixel Anzahl, welche die Kantenlänge der Quadrate angibt: `Picture.rectangle(n, n)`
+- `funktion_mit_parameter(250)` zeichnet also mindestens ein Quadrat der Seitenlänge 250.
+- Es zeichnet außerdem weitere Quadrate weil es sich selbst aufruft: `funktion_mit_parameter(n - ???)`
+- Die Seitenlänge des nächsten gezeichneten Quadrats ist daher um den Wert ??? geringer als `n`.
+- Es werden keine weiteren Quadrate mehr gezeichnet wenn `n < 10` ist.
+- In unserem Fall wird als sechstes ein Quadrat mit `n=0` gezeichnet. Das sieht man nur nicht.

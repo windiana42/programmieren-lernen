@@ -1,7 +1,7 @@
 # Dokumentation nutzen und neue Herausforderungen finden
 
 Die Kojo-Dokumentation hilft dir, neue Befehle zu verstehen und eigene Ideen zu bauen.
-Ausserdem findest du dort viele neue Herausforderungen.
+Außerdem findest du dort viele neue Herausforderungen.
 
 ## Start: Getting Started Buch öffnen
 
@@ -37,7 +37,7 @@ Wichtig:
 
 - Mit dem Schlüsselwort `def` wird eine Funktion definiert.
 - `def square()` definiert eine Funktion, die man danach mit `square()` aufrufen kann
-- Die Anweisungen, die beim Funktionsaufruf ausgefuehrt werden, stehen in geschweiften Klammern `{ ... }`.
+- Die Anweisungen, die beim Funktionsaufruf ausgeführt werden, stehen in geschweiften Klammern `{ ... }`.
 
 Beispielbild:
 
@@ -45,6 +45,6 @@ Beispielbild:
 
 ## Fortgeschrittene Aufgabe (Seite 15)
 
-Wenn du fertig bist, gehe auf **Seite 15** und probiere die naechste Herausforderung:
+Wenn du fertig bist, gehe auf **Seite 15** und probiere die nächste Herausforderung:
 
 ![Fortgeschrittene Aufgabe](images/aufgaben02_05_advanced.png)
