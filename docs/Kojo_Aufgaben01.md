@@ -28,21 +28,33 @@
 ### Aufgabe 3
 
 - Starte die Dokumentation des Befehlsvorrats (Tools->Instruction Palette).
-- Wähle "Live help: On".
-- Suche und teste den Schildkrötenbefehl `setSpeed`.
 
 ![Aufgabe 3 - Schildkrötenbefehle](images/aufgaben01_05_turtle_commands.png)
 
+- Wähle "Live help: On".
+- Halte den Mauszeiger über den Turtle Befehl `setSpeed(s)`.
+- Füge den Befehl `setSpeed(...)` in Dein Programm aus Aufgabe 2 ein, um die Geschwindigkeit der Schildkröte zu 
+verändern. In der Dokumentation werden mögliche Werte genannt: "Possible values are ...". 
+Probiere verschiedene Werte aus, um die Auswirkungen zu beobachten.
+
 ### Aufgabe 4
 
-Zeichne Dein eigenes Quadrat mit Hilfe des Befehlsvorrats. Verwende dabei den `forward`-Befehl nur einmal (Tipp: Verwende Wiederholung).
-
+Zeichne Dein eigenes Quadrat mit Hilfe des Befehlsvorrats. Verwende dabei den `forward`-Befehl nur einmal. 
 ![Aufgabe 5 - Verschachtelte Wiederholung](images/aufgaben01_06_square.png)
+
+Tipps: 
+- Verwende Wiederholung/repeat
+- Ganz oben im Befehlsvorrat gibt es "Flow"
+- Dort gibt es Hilfe zum Befehl `repeat [command]`
+
 
 ### Aufgabe 5
 
-- Zeichne Deine eigene Drehfigur mit Hilfe des Quadrats aus Aufgabe 4 (z.B. durch verschachtelte Wiederholung). 
+- Zeichne Deine eigene Drehfigur mit Hilfe des Quadrats aus Aufgabe 4 (z.B. durch `repeat` innerhalb `repeat(n) {...}`). 
 - Spiele mit `setPenColor` und `setPenThickness`, um die Figur abwechslungsreich zu gestalten.
 - Versuche auch folgende Figur zu zeichnen.
 
 ![Aufgabe 5 - Verschachtelte Wiederholung](images/aufgaben01_07_turn_figure.png)
+
+Tipps:
+- Die Wiederholungszahl mal der leichten Drehung sollte 360 Grad ergeben (z.B. `repeat(30) { ... right(12) }`)
