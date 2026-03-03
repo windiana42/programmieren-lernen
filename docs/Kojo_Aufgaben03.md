@@ -1,50 +1,220 @@
-# Dokumentation nutzen und neue Herausforderungen finden
+# Schildkrötenbefehle
 
-Die Kojo-Dokumentation hilft dir, neue Befehle zu verstehen und eigene Ideen zu bauen.
-Ausserdem findest du dort viele neue Herausforderungen.
+## Startpunkt ist Aufgabe 3 aus letztem Arbeitsblatt
 
-## Start: Getting Started Buch öffnen
+- Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
+- Wähle "Live help: On"
+- Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`)
 
-Folgendermaßen kannst Du die Dokumentation von Kojo öffnen:
+![Schildkrötenbefehle](images/aufgaben03_01_turtle_commands.png)
 
-![Dokumentation in Kojo](images/aufgaben03_01_dokumentation.png)
+### Teste Befehl setSpeed
 
-Visit the **Kojo Docs** site
+```scala
+clear()
+setSpeed(fast)
+repeat(36) {
+  repeat(4) {
+    forward(100)
+    left(90)
+  }
+  right(10)
+}
+```
 
-![Getting Started Website](images/aufgaben03_02_dokumentation_website.png)
+### Teste Farben
 
-Folgende Aufgaben beziehen sich auf das Kojo-Buch zu dem man auch über 
-Turtle Graphics -> Getting Started -> Getting Started kommt:
+```scala
+clear()
+setBackgroundH(yellow,blue)
+setPenColor(red)
+setFillColor(green)
+setPenThickness(3)
+repeat(3) {
+  forward(100)
+  right(120)
+}
+```
 
-- [Getting Started (PDF)](https://github.com/litan/kojo/releases/download/2.9.05_release/getting-started-06-08-18.pdf)
+### Verändere Schildkröte
 
-## Aufgabe 1: Farbiges Kreuz (Seite 7)
+```scala
+clear()
+setSpeed(slow)
+repeat(4) {
+  setCostume(Costume.bat1)
+  forward(50)
+  setCostume(Costume.bat2)
+  forward(50)
+  right(90)
+}
+```
 
-Suche im Getting-Started-Buch auf **Seite 7** die Herausforderung mit dem bunten Kreuz und wähle die richtigen Befehle 
-anstatt der drei Fragezeichen "???".
-Vergleiche mit diesem Bild:
+## Fortgeschrittene Themen
 
-![Colorful Cross](images/aufgaben03_03_colorful_cross.png)
+### Funktionen
 
-Wenn du die Stelle gefunden hast, probiere die Aufgabe in Kojo aus.
+```scala
+def mein_haus() {
+  savePosHe()
+  repeat(5) {
+    left(90)
+    forward(100)
+  }
+  left(45)
+  forward(71)
+  left(90)
+  forward(71)
+  restorePosHe()
+}
 
-## Aufgabe 2: Drei Quadrate mit eigener Funktion (Seite 14)
+clear()
+setSpeed(medium)
+right(90)
+repeat(3) {
+  mein_haus()
+  hop(200)
+}
+```
 
-Suche im Buch auf **Seite 14** die Aufgabe, in der eine eigene Funktion `square()` verwendet wird und löse sie.
-Zeichne damit **drei Quadrate**.
+### Mehrere Schildkröten
 
-Wichtig:
+```scala
+def blume(t:Turtle, c:Color) = runInBackground {
+  t.setSpeed(slow)
+  t.setPenColor(black)
+  t.setFillColor(c)
+  repeat(4){
+    t.right()
+    repeat(90){
+      t.turn(-2)
+      t.forward(2)
+    }
+  }
+  t.invisible()
+}
 
-- Mit dem Schlüsselwort `def` wird eine Funktion definiert.
-- `def square()` definiert eine Funktion, die man danach mit `square()` aufrufen kann
-- Die Anweisungen, die beim Funktionsaufruf ausgefuehrt werden, stehen in geschweiften Klammern `{ ... }`.
+cleari()
+val schildkroete1=newTurtle(-200,100)
+val schildkroete2=newTurtle(100,100)
+blume(schildkroete1, green)
+blume(schildkroete2, yellow)
+```
 
-Beispielbild:
+# Zeichenbefehle
 
-![Funktion square](images/aufgaben03_04_function.png)
+## Startpunkt ist Aufgabe 4 aus letztem Arbeitsblatt
 
-## Fortgeschrittene Aufgabe (Seite 15)
+- Starte die Dokumentation des Befehlsvorats (Menü Tools->Instruction Palette)
+- Wähle "Live help: On"
+- Wähle ganz oben: "Picture" oder "Picture Transforms"
+- Suche und teste Picture Befehle (z.B. `Picture.rectangle(50,100)`)
+- Teste den Unterschied von `clear()` und `cleari()`
 
-Wenn du fertig bist, gehe auf **Seite 15** und probiere die naechste Herausforderung:
+![Picture Befehle](images/aufgaben03_02_picture_commands.png)
 
-![Fortgeschrittene Aufgabe](images/aufgaben03_05_advanced.png)
+### Teste Befehl Picture.rectangle
+
+```scala
+cleari()
+val rect = Picture.rectangle(50, 100)
+draw(rect)
+draw(Picture.text("Klasse 5", Font("Serif", 30)))
+```
+
+### Teste Verzerrung und Rotation
+
+- Links von `->` steht die Veränderung
+- Mehrere Veränderungen sind durch `*` getrennt
+- Zwischenständen kann man mit `val` Namen geben
+
+```scala
+cleari()
+val rechteck = Picture.rectangle(50, 50)
+val vollesRechteck =
+  fillColor(lightGray) -> rechteck
+draw(scale(2,1) * rotp(45,0,0) -> vollesRechteck)
+```
+
+### Verschiebe Objekte an ihre Position
+
+```scala
+cleari()
+val koerper = Picture.rectangle(10, 50)
+draw(koerper)
+val kopf = Picture.circle(10)
+draw(trans(5,60) -> kopf)
+val linker_arm = Picture.line(40, 30)
+draw(trans(10,30) -> linker_arm)
+val rechter_arm = Picture.line(-40, 30)
+draw(trans(0,30) -> rechter_arm)
+val bein = picCol(
+  Picture.ellipse(15, 5),
+  trans(10,0)->Picture.ellipse(5, 15)
+)
+draw(trans(-15,-30) -> bein)
+draw(flipY * trans(-25,-30) -> bein)
+```
+
+## Fortgeschrittene Themen
+
+### Schleifen
+
+```scala
+cleari()
+val karte =
+  fillColor(green) -> Picture.rectangle(50, 80)
+for (i <- 1 to 4) {
+  for (j <- 1 to 2) {
+    draw(trans(i*70 - 200,j*100 - 100) -> karte)
+  }
+}
+```
+
+### Animation
+
+```scala
+val auto=Picture.image("/media/car-ride/car1.png")
+cleari()
+draw(auto)
+activateCanvas()
+animate {
+  if (isKeyPressed(Kc.VK_LEFT)) {
+    val pVel = Vector2D(-3, 0)
+    auto.translate(pVel)
+  }
+  if (isKeyPressed(Kc.VK_RIGHT)) {
+    val pVel = Vector2D(3, 0)
+    auto.translate(pVel)
+  }
+}
+```
+
+### Mausclick auf Objekt
+
+```scala
+def zeige_nummer(
+  x: Double, y: Double,
+  mouse_x: Double, mouse_y: Double) {
+  draw(trans(x+20, y+60)
+    -> Picture.text("1", Font("Serif", 30)))
+  draw(trans(mouse_x, mouse_y)
+    -> Picture.ellipse(3,3))
+}
+
+cleari()
+val karte
+  = fillColor(green) -> Picture.rectangle(50, 80)
+for (i <- 1 to 4) {
+  for (j <- 1 to 2) {
+    val x = i*70 - 200
+    val y = j*100 - 100
+    val verschobene_karte = trans(x,y) -> karte
+    verschobene_karte.onMouseClick(
+      (mouse_x, mouse_y)
+      => zeige_nummer(x, y, mouse_x, mouse_y)
+    )
+    draw(verschobene_karte)
+  }
+}
+```
