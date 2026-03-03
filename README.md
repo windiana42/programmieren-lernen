@@ -8,4 +8,5 @@ Wir arbeiten mit [Kojo](https://www.kogics.net/kojo) — einer offenen Lernumgeb
 - [Kojo Aufgabenblatt 1](docs/Kojo_Aufgaben01.md) — Einführung mit ersten Aufgaben zu Turtle-Befehlen.
 - [Kojo Aufgabenblatt 2](docs/Kojo_Aufgaben02.md) — Übungen zum Arbeiten mit der Dokumentation und zum Finden neuer Herausforderungen.
 - [Kojo Aufgabenblatt 3](docs/Kojo_Aufgaben03.md) — Einstieg in Picture Graphics mit Übungen und Bonusaufgabe.
-- [Kojo Aufgabenblatt 4](docs/Kojo_Aufgaben04.md) — Weiterführende Übungen mit Codebeispielen zu Schildkröten- und Zeichenbefehlen.
+- [Kojo Aufgabenblatt 4: Turtle-Welt](docs/Kojo_Aufgaben04_Turtle.md) — Weiterführende Turtle-Übungen mit Codebeispielen.
+- [Kojo Aufgabenblatt 4: Picture-Welt](docs/Kojo_Aufgaben04_Picture.md) — Weiterführende Picture-Übungen mit Codebeispielen.
