@@ -29,15 +29,20 @@
 
 - Starte die Dokumentation des Befehlsvorrats (Tools->Instruction Palette).
 - Wähle "Live help: On".
-- Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`).
+- Suche und teste den Schildkrötenbefehl `setSpeed`.
 
 ![Aufgabe 3 - Schildkrötenbefehle](images/aufgaben01_05_turtle_commands.png)
 
 ### Aufgabe 4
 
-- Starte die Dokumentation des Befehlsvorrats (Tools->Instruction Palette).
-- Wähle "Live help: On".
-- Suche und teste Picture-Befehle (z.B. `Picture.rectangle(50,100)`).
-- Teste den Unterschied von `clear()` und `cleari()`.
+Zeichne Dein eigenes Quadrat mit Hilfe des Befehlsvorrats. Verwende dabei den `forward`-Befehl nur einmal (Tipp: Verwende Wiederholung).
 
-![Aufgabe 4 - Picture-Befehle](images/aufgaben01_06_picture_commands.png)
+![Aufgabe 5 - Verschachtelte Wiederholung](images/aufgaben01_06_square.png)
+
+### Aufgabe 5
+
+- Zeichne Deine eigene Drehfigur mit Hilfe des Quadrats aus Aufgabe 4 (z.B. durch verschachtelte Wiederholung). 
+- Spiele mit `setPenColor` und `setPenThickness`, um die Figur abwechslungsreich zu gestalten.
+- Versuche auch folgende Figur zu zeichnen.
+
+![Aufgabe 5 - Verschachtelte Wiederholung](images/aufgaben01_07_turn_figure.png)
