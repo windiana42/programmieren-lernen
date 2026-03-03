@@ -5,7 +5,7 @@ Wir arbeiten mit [Kojo](https://www.kogics.net/kojo) — einer offenen Lernumgeb
 ## Anleitungen
 
 - [Kojo Installation auf Windows (ohne Admin-Rechte)](docs/Kojo_Installation_Windows_ohne_Admin.md) — Schritt-für-Schritt-Anleitung für Windows-Nutzer, die keine Administratorrechte haben.
-- [Kojo Aufgabenblatt 1](docs/Kojo_Aufgaben01.md) — Einführung mit ersten Aufgaben zu Turtle- und Picture-Befehlen.
+- [Kojo Aufgabenblatt 1](docs/Kojo_Aufgaben01.md) — Einführung mit ersten Aufgaben zu Turtle-Befehlen.
 - [Kojo Aufgabenblatt 2](docs/Kojo_Aufgaben02.md) — Übungen zum Arbeiten mit der Dokumentation und zum Finden neuer Herausforderungen.
-- [Kojo Aufgabenblatt 3](docs/Kojo_Aufgaben03.md) — Einstieg in Picture Graphics mit konkreten Übungen und Bonusaufgabe.
+- [Kojo Aufgabenblatt 3](docs/Kojo_Aufgaben03.md) — Einstieg in Picture Graphics mit Übungen und Bonusaufgabe.
 - [Kojo Aufgabenblatt 4](docs/Kojo_Aufgaben04.md) — Weiterführende Übungen mit Codebeispielen zu Schildkröten- und Zeichenbefehlen.

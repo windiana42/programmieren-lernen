@@ -1,14 +1,14 @@
 # Schildkrötenbefehle
 
-## Startpunkt ist Aufgabe 3 aus letztem Arbeitsblatt
+## Wiederholung des Befehlsvorrats
 
-- Starte die Dokumentation des Befehlsvorrats (Menü Tools->Instruction Palette)
-- Wähle "Live help: On"
-- Suche und teste Schildkrötenbefehle (z.B. `setSpeed(fast)`, `setFillColor(red)`)
+1. Starte die Dokumentation des Befehlsvorrats (Menü Tools->Instruction Palette)
+2. Wähle "Live help: On"
 
 ![Schildkrötenbefehle](images/aufgaben04_01_turtle_commands.png)
 
-### Teste Befehl setSpeed
+3. Halte den Mauszeiger über `setSpeed(s)` und experimentiere mit verschiedenen 
+Geschwindigkeiten, welche die Dokumentation nennt: "Possible values are ..."
 
 ```scala
 clear()
@@ -22,7 +22,12 @@ repeat(36) {
 }
 ```
 
-### Teste Farben
+4. Halte den Mauszeiger über `setFillColor(c)` und führe das Beispielprogramm aus:
+
+![Gruener Kreis](images/aufgaben04_set_fill_color_example.png)
+
+5. Halte den Mauszeiger über `setFillColor(c)`, `setPenColor(c)` und `setPenThickness(t)`.
+Versuche vorherzusagen was folgendes Programm zeichnen wird und teste es danach aus:
 
 ```scala
 clear()
@@ -36,23 +41,8 @@ repeat(3) {
 }
 ```
 
-### Verändere Schildkröte
-
-```scala
-clear()
-setSpeed(slow)
-repeat(4) {
-  setCostume(Costume.bat1)
-  forward(50)
-  setCostume(Costume.bat2)
-  forward(50)
-  right(90)
-}
-```
-
-## Fortgeschrittene Themen
-
-### Funktionen
+6. Schau Dir folgendes Programm an. Beobachte, wie die Befehle hinter `def main_haus(){` immer nur dann
+ausgeführt werden wenn weiter unten `mein_haus()` aufgerufen wird.
 
 ```scala
 def mein_haus() {
@@ -77,7 +67,35 @@ repeat(3) {
 }
 ```
 
-### Mehrere Schildkröten
+7. Zeichne durch möglichst kleine Änderungen Häuser an anderen Positionen:
+
+![Gruener Kreis](images/aufgaben04_haeuser.png)
+
+## Beispielprogramme
+
+Kojo hat viele Beispielprogramme. Das ist toll um Ideen zu bekommen was man programmieren könnte.
+Allerdings ist der Programmcode oft sehr lange und kompliziert. 
+Im Folgenden sind kurze Programmstücke aus den Bespielen geholt, die ihr verstehen könnt:
+
+### Turtle Beispiel 1: Veränderte Schildkröte
+
+![Gruener Kreis](images/aufgaben04_sprite_animation.png)
+
+```scala
+clear()
+setSpeed(slow)
+repeat(4) {
+  setCostume(Costume.bat1)
+  forward(50)
+  setCostume(Costume.bat2)
+  forward(50)
+  right(90)
+}
+```
+
+### Turtle Beispiel 2: Mehrere Schildkröten
+
+![Gruener Kreis](images/aufgaben04_rangoli.png)
 
 ```scala
 def blume(t:Turtle, c:Color) = runInBackground {
@@ -103,40 +121,48 @@ blume(schildkroete2, yellow)
 
 # Zeichenbefehle
 
-## Startpunkt ist Aufgabe 4 aus letztem Arbeitsblatt
+## Wiederholung des Befehlsvorrats
 
-- Starte die Dokumentation des Befehlsvorrats (Menü Tools->Instruction Palette)
-- Wähle "Live help: On"
-- Wähle ganz oben: "Picture" oder "Picture Transforms"
-- Suche und teste Picture Befehle (z.B. `Picture.rectangle(50,100)`)
-- Teste den Unterschied von `clear()` und `cleari()`
+1. Starte die Dokumentation des Befehlsvorrats (Menü Tools->Instruction Palette)
+2. Wähle "Live help: On"
+3. Wähle ganz oben: "Picture"
 
 ![Picture Befehle](images/aufgaben04_02_picture_commands.png)
 
-### Teste Befehl Picture.rectangle
+4. Halte den Mauszeiger über `Picture.rectangle(w, h)` und `Picture.text(w, h)`.
+Kombiniere die zwei Beispielprogramme mit dem Text "Klasse 5" in Schriftgröße 30 zu:
 
-```scala
-cleari()
-val rect = Picture.rectangle(50, 100)
-draw(rect)
-draw(Picture.text("Klasse 5", Font("Serif", 30)))
-```
+![Picture Befehle](images/aufgaben04_klasse5.png)
 
-### Teste Verzerrung und Rotation
+5. Wähle ganz oben: "Picture Transforms"
 
-- Links von `->` steht die Veränderung
-- Mehrere Veränderungen sind durch `*` getrennt
-- Zwischenständen kann man mit `val` Namen geben
+6. Halte den Mauszeiger über `trans(f)` und `rot(a)`.
+Kombiniere die zwei Beispielprogramme zu: 
+
+![Picture Befehle](images/aufgaben04_trans_rot.png)
+
+Tipp:
+- in den Beispielen unterscheidet sich nur die vorletzte Zeile
+
+7. Was die Instruction Palette nicht verrät: Man kann mit `scale(fx,fy)` ein Objekt auch verzerren (z.B. Raute)
+und man kann mehrere Veränderungen mit `*` auf das gleiche Objekt anwenden:
 
 ```scala
 cleari()
 val rechteck = Picture.rectangle(50, 50)
 val vollesRechteck =
   fillColor(lightGray) -> rechteck
-draw(scale(2,1) * rotp(45,0,0) -> vollesRechteck)
+draw(scale(2,1) * rot(45) -> vollesRechteck)
 ```
 
-### Verschiebe Objekte an ihre Position
+Tipp:
+- Links von `->` steht die Veränderung
+- Mehrere Veränderungen sind durch `*` getrennt
+- Zwischenständen kann man mit `val` Namen geben
+
+
+8. Der Fantasie beim Verändern von Kreisen, Linien und Rechtecken sind beim 
+Zusammensetzen keine Grenzen gesetzt:
 
 ```scala
 cleari()
@@ -156,9 +182,7 @@ draw(trans(-15,-30) -> bein)
 draw(flipY * trans(-25,-30) -> bein)
 ```
 
-## Fortgeschrittene Themen
-
-### Schleifen
+9. Schleifen helfen ungemein viel um Tipparbeit zu sparen:
 
 ```scala
 cleari()
@@ -171,7 +195,15 @@ for (i <- 1 to 4) {
 }
 ```
 
-### Animation
+## Beispielprogramme
+
+Kojo hat viele Beispielprogramme. Das ist toll um Ideen zu bekommen was man programmieren könnte.
+Allerdings ist der Programmcode oft sehr lange und kompliziert. 
+Im Folgenden sind kurze Programmstücke aus den Bespielen geholt, die ihr verstehen könnt:
+
+### Picture Beispiel 1: Auto mit Tastatur steuern
+
+![Gruener Kreis](images/aufgaben04_car.png)
 
 ```scala
 val auto=Picture.image("/media/car-ride/car1.png")
@@ -190,7 +222,9 @@ animate {
 }
 ```
 
-### Mausklick auf Objekt
+### Picture Beispiel 2: Mausklick auf Karte als Vorbereitung für Memory
+
+![Gruener Kreis](images/aufgaben04_memory.png)
 
 ```scala
 def zeige_nummer(
