@@ -26,7 +26,7 @@ repeat(36) {
 
 4. Halte den Mauszeiger über `setFillColor(c)` und führe das Beispielprogramm aus:
 
-<img src="images/aufgaben04_set_fill_color_example.png" alt="Gruener Kreis" width="400">
+<img src="images/aufgaben04_set_fill_color_example.png" alt="Gruener Kreis" width="150">
 
 5. Halte den Mauszeiger über `setFillColor(c)`, `setPenColor(c)` und `setPenThickness(t)`.
 Versuche vorherzusagen, was folgendes Programm zeichnen wird, und teste es danach aus:
@@ -71,7 +71,7 @@ repeat(3) {
 
 7. Zeichne durch möglichst kleine Änderungen Häuser an anderen Positionen:
 
-<img src="images/aufgaben04_haeuser.png" alt="Gruener Kreis" width="400">
+<img src="images/aufgaben04_haeuser.png" alt="Gruener Kreis" width="600">
 
 ## Beispielprogramme
 
@@ -81,7 +81,7 @@ Im Folgenden sind kurze Programmstücke aus den Beispielen geholt, die ihr verst
 
 ### Turtle Beispiel 1: Veränderte Schildkröte
 
-<img src="images/aufgaben04_sprite_animation.png" alt="Gruener Kreis" width="400">
+<img src="images/aufgaben04_sprite_animation.png" alt="Gruener Kreis" width="300">
 
 ```scala
 clear()
@@ -97,7 +97,7 @@ repeat(4) {
 
 ### Turtle Beispiel 2: Sind das mehrere Schildkröten oder ist das Kunst?
 
-<img src="images/aufgaben04_rangoli.png" alt="Gruener Kreis" width="400">
+<img src="images/aufgaben04_rangoli.png" alt="Gruener Kreis" width="300">
 
 ```scala
 def blume(t:Turtle, c:Color) = runInBackground {

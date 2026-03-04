@@ -35,7 +35,7 @@ Erstelle folgende Figur aus drei Rechtecken mit unterschiedlichen Größen, Farb
 
 So soll es ungefähr aussehen:
 
-<img src="images/aufgaben03_03_flag.png" alt="Aufgabe 2 Drei Rechtecke" width="400">
+<img src="images/aufgaben03_03_flag.png" alt="Aufgabe 2 Drei Rechtecke" width="200">
 
 ---
 
@@ -56,7 +56,7 @@ def funktion_mit_parameter(n: Int): Picture = {
 draw(funktion_mit_parameter(250).withPenColor(blue).withPenThickness(3))
 ```
 
-<img src="images/aufgaben03_04_recursion.png" alt="Bonusaufgabe Rekursion/Layout" width="400">
+<img src="images/aufgaben03_04_recursion.png" alt="Bonusaufgabe Rekursion/Layout" width="700">
 
 Tipps:
 

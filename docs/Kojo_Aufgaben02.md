@@ -7,7 +7,7 @@ Außerdem findest du dort viele neue Herausforderungen.
 
 Folgendermaßen kannst Du die Dokumentation von Kojo öffnen:
 
-<img src="images/aufgaben02_01_dokumentation.png" alt="Dokumentation in Kojo" width="400">
+<img src="images/aufgaben02_01_dokumentation.png" alt="Dokumentation in Kojo" width="200">
 
 Visit the **Kojo Docs** site
 
@@ -24,7 +24,7 @@ Suche im Getting-Started-Buch auf **Seite 7** die Herausforderung mit dem bunten
 anstatt der drei Fragezeichen "???".
 Vergleiche mit diesem Bild:
 
-<img src="images/aufgaben02_03_colorful_cross.png" alt="Colorful Cross" width="400">
+<img src="images/aufgaben02_03_colorful_cross.png" alt="Colorful Cross" width="200">
 
 Wenn du die Stelle gefunden hast, probiere die Aufgabe in Kojo aus.
 
@@ -41,10 +41,10 @@ Wichtig:
 
 Beispielbild:
 
-<img src="images/aufgaben02_04_function.png" alt="Funktion square" width="400">
+<img src="images/aufgaben02_04_function.png" alt="Funktion square" width="200">
 
 ## Fortgeschrittene Aufgabe (Seite 15)
 
 Wenn du fertig bist, gehe auf **Seite 15** und probiere die nächste Herausforderung:
 
-<img src="images/aufgaben02_05_advanced.png" alt="Fortgeschrittene Aufgabe" width="400">
+<img src="images/aufgaben02_05_advanced.png" alt="Fortgeschrittene Aufgabe" width="200">

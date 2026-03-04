@@ -13,7 +13,7 @@ Wenn ihr weitermachen wollt, könnt ihr euch die **Picture-Welt** aussuchen.
 4. Halte den Mauszeiger über `Picture.rectangle(w, h)` und `Picture.text(w, h)`.
 Kombiniere die zwei Beispielprogramme mit dem Text "Klasse 5" in Schriftgröße 30 zu:
 
-<img src="images/aufgaben04_klasse5.png" alt="Picture Befehle" width="400">
+<img src="images/aufgaben04_klasse5.png" alt="Picture Befehle" width="150">
 
 5. Wähle ganz oben: "Picture Transforms"
 
@@ -83,7 +83,7 @@ Im Folgenden sind kurze Programmstücke aus den Beispielen geholt, die ihr verst
 
 ### Picture Beispiel 1: Auto mit Tastatur steuern
 
-<img src="images/aufgaben04_car.png" alt="Gruener Kreis" width="400">
+<img src="images/aufgaben04_car.png" alt="Gruener Kreis" width="300">
 
 ```scala
 val auto=Picture.image("/media/car-ride/car1.png")
@@ -104,7 +104,7 @@ animate {
 
 ### Picture Beispiel 2: Mausklick auf Karte als Vorbereitung für Memory
 
-<img src="images/aufgaben04_memory.png" alt="Gruener Kreis" width="400">
+<img src="images/aufgaben04_memory.png" alt="Gruener Kreis" width="300">
 
 ```scala
 def zeige_nummer(
