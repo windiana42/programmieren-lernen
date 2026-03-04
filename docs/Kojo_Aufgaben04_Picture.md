@@ -8,19 +8,19 @@ Wenn ihr weitermachen wollt, könnt ihr euch die **Picture-Welt** aussuchen.
 2. Wähle "Live help: On"
 3. Wähle ganz oben: "Picture"
 
-![Picture Befehle](images/aufgaben04_02_picture_commands.png)
+<img src="images/aufgaben04_02_picture_commands.png" alt="Picture Befehle" width="400">
 
 4. Halte den Mauszeiger über `Picture.rectangle(w, h)` und `Picture.text(w, h)`.
 Kombiniere die zwei Beispielprogramme mit dem Text "Klasse 5" in Schriftgröße 30 zu:
 
-![Picture Befehle](images/aufgaben04_klasse5.png)
+<img src="images/aufgaben04_klasse5.png" alt="Picture Befehle" width="400">
 
 5. Wähle ganz oben: "Picture Transforms"
 
 6. Halte den Mauszeiger über `trans(f)` und `rot(a)`.
 Kombiniere die zwei Beispielprogramme zu:
 
-![Picture Befehle](images/aufgaben04_trans_rot.png)
+<img src="images/aufgaben04_trans_rot.png" alt="Picture Befehle" width="400">
 
 Tipp:
 - In den Beispielen unterscheidet sich nur die vorletzte Zeile.
@@ -83,7 +83,7 @@ Im Folgenden sind kurze Programmstücke aus den Beispielen geholt, die ihr verst
 
 ### Picture Beispiel 1: Auto mit Tastatur steuern
 
-![Gruener Kreis](images/aufgaben04_car.png)
+<img src="images/aufgaben04_car.png" alt="Gruener Kreis" width="400">
 
 ```scala
 val auto=Picture.image("/media/car-ride/car1.png")
@@ -104,7 +104,7 @@ animate {
 
 ### Picture Beispiel 2: Mausklick auf Karte als Vorbereitung für Memory
 
-![Gruener Kreis](images/aufgaben04_memory.png)
+<img src="images/aufgaben04_memory.png" alt="Gruener Kreis" width="400">
 
 ```scala
 def zeige_nummer(

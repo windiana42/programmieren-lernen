@@ -2,7 +2,7 @@
 
 In diesem Aufgabenblatt arbeitet ihr mit der Kojo-Dokumentation zu [**Picture Graphics**](https://docs.kogics.net/).
 
-![Picture Graphics Dokumentation](images/aufgaben03_01_dokumentation_website.png)
+<img src="images/aufgaben03_01_dokumentation_website.png" alt="Picture Graphics Dokumentation" width="400">
 
 - Klick auf "Picture Graphics"
 - Klick auf "An introduction to Pictures"
@@ -23,7 +23,7 @@ cleari()
 draw(pic1)
 ```
 
-![Aufgabe 1 Rechteck](images/aufgaben03_02_rectangle.png)
+<img src="images/aufgaben03_02_rectangle.png" alt="Aufgabe 1 Rechteck" width="400">
 
 - Teste den Unterschied von `clear()` zu `cleari()`
 
@@ -35,7 +35,7 @@ Erstelle folgende Figur aus drei Rechtecken mit unterschiedlichen Größen, Farb
 
 So soll es ungefähr aussehen:
 
-![Aufgabe 2 Drei Rechtecke](images/aufgaben03_03_flag.png)
+<img src="images/aufgaben03_03_flag.png" alt="Aufgabe 2 Drei Rechtecke" width="400">
 
 ---
 
@@ -56,7 +56,7 @@ def funktion_mit_parameter(n: Int): Picture = {
 draw(funktion_mit_parameter(250).withPenColor(blue).withPenThickness(3))
 ```
 
-![Bonusaufgabe Rekursion/Layout](images/aufgaben03_04_recursion.png)
+<img src="images/aufgaben03_04_recursion.png" alt="Bonusaufgabe Rekursion/Layout" width="400">
 
 Tipps:
 

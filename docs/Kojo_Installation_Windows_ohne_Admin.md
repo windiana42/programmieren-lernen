@@ -23,7 +23,7 @@ Die Datei wird in deinem **Downloads-Ordner** gespeichert.
 
 So sieht das aus:
 
-![Downloads](images/02_downloads_folder.png)
+<img src="images/02_downloads_folder.png" alt="Downloads" width="400">
 
 ---
 
@@ -32,7 +32,7 @@ So sieht das aus:
 Rechtsklick auf **Kojo_2_9_34.zip**  
 Dann klicke auf **Alle extrahieren…**
 
-![Kojo ZIP](images/03_kojo_zip_rechtsklick.png)
+<img src="images/03_kojo_zip_rechtsklick.png" alt="Kojo ZIP" width="400">
 
 ---
 
@@ -41,7 +41,7 @@ Dann klicke auf **Alle extrahieren…**
 Rechtsklick auf **microsoft-jdk-21.0.10-windows-x64.zip**  
 Dann klicke auf **Alle extrahieren…**
 
-![JDK ZIP](images/04_jdk_zip_rechtsklick.png)
+<img src="images/04_jdk_zip_rechtsklick.png" alt="JDK ZIP" width="400">
 
 ---
 
@@ -52,7 +52,7 @@ Gehe in den Ordner:
 
 So sieht der Ordner aus:
 
-![Kojo Speicherort](images/06_kojo_bin_pfad.png)
+<img src="images/06_kojo_bin_pfad.png" alt="Kojo Speicherort" width="400">
 
 ---
 
@@ -60,7 +60,7 @@ So sieht der Ordner aus:
 
 Rechtsklick auf **kojo.cmd** → **Im Editor bearbeiten**
 
-![kojo.cmd öffnen](images/07_kojo_exe_start.png)
+<img src="images/07_kojo_exe_start.png" alt="kojo.cmd öffnen" width="400">
 
 Dort steht eine Zeile mit einem Java-Pfad.  
 Ersetze den Java-Pfad durch diesen:
@@ -69,7 +69,7 @@ Ersetze den Java-Pfad durch diesen:
 
 So sieht das aus:
 
-![kojo.cmd bearbeiten](images/05_kojo_cmd_edit.png)
+<img src="images/05_kojo_cmd_edit.png" alt="kojo.cmd bearbeiten" width="400">
 
 ---
 
@@ -85,9 +85,9 @@ Damit alle im Kurs dieselben Menüs und Begriffe sehen, stellen wir Kojo **immer
 
 Klicke in Kojo auf: **Sprache → Englisch**
 
-![Sprache auf Englisch](images/08_sprache_englisch.png)
-
-![Kojo neu starten nach Sprachwechsel](images/09_sprache_englisch_neustart.png)
+<img src="images/08_sprache_englisch.png" alt="Sprache auf Englisch" width="200">
+<br>
+<img src="images/09_sprache_englisch_neustart.png" alt="Kojo neu starten nach Sprachwechsel" width="500">
 
 Danach musst du Kojo **selbst schließen** und **neu starten**.
 

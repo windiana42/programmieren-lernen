@@ -7,11 +7,11 @@ Außerdem findest du dort viele neue Herausforderungen.
 
 Folgendermaßen kannst Du die Dokumentation von Kojo öffnen:
 
-![Dokumentation in Kojo](images/aufgaben02_01_dokumentation.png)
+<img src="images/aufgaben02_01_dokumentation.png" alt="Dokumentation in Kojo" width="400">
 
 Visit the **Kojo Docs** site
 
-![Getting Started Website](images/aufgaben02_02_dokumentation_website.png)
+<img src="images/aufgaben02_02_dokumentation_website.png" alt="Getting Started Website" width="400">
 
 Folgende Aufgaben beziehen sich auf das Kojo-Buch zu dem man auch über 
 Turtle Graphics -> Getting Started -> Getting Started kommt:
@@ -24,7 +24,7 @@ Suche im Getting-Started-Buch auf **Seite 7** die Herausforderung mit dem bunten
 anstatt der drei Fragezeichen "???".
 Vergleiche mit diesem Bild:
 
-![Colorful Cross](images/aufgaben02_03_colorful_cross.png)
+<img src="images/aufgaben02_03_colorful_cross.png" alt="Colorful Cross" width="400">
 
 Wenn du die Stelle gefunden hast, probiere die Aufgabe in Kojo aus.
 
@@ -41,10 +41,10 @@ Wichtig:
 
 Beispielbild:
 
-![Funktion square](images/aufgaben02_04_function.png)
+<img src="images/aufgaben02_04_function.png" alt="Funktion square" width="400">
 
 ## Fortgeschrittene Aufgabe (Seite 15)
 
 Wenn du fertig bist, gehe auf **Seite 15** und probiere die nächste Herausforderung:
 
-![Fortgeschrittene Aufgabe](images/aufgaben02_05_advanced.png)
+<img src="images/aufgaben02_05_advanced.png" alt="Fortgeschrittene Aufgabe" width="400">
