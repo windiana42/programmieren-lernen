@@ -53,10 +53,17 @@ Tipps:
 ### Aufgabe 5
 
 - Zeichne Deine eigene Drehfigur mit Hilfe des Quadrats aus Aufgabe 4 (z.B. durch `repeat` innerhalb `repeat(n) {...}`). 
-- Spiele mit `setPenColor` und `setPenThickness`, um die Figur abwechslungsreich zu gestalten.
-- Versuche auch folgende Figur zu zeichnen.
 
-<img src="images/aufgaben01_07_turn_figure.png" alt="Aufgabe 5 - Verschachtelte Wiederholung" width="400">
+<img src="images/aufgaben01_07_turn_figure.png" alt="Aufgabe 5 - Verschachtelte Wiederholung" width="300">
 
 Tipps:
 - Die Wiederholungszahl mal der leichten Drehung sollte 360 Grad ergeben (z.B. `repeat(30) { ... right(12) }`)
+
+### Bonusaufgabe
+
+Nutze den Befehlsvorrat, um herauszufinden wie Du Linienfarbe und Strichstärke veränderst.
+
+- Halte die Maus über die Befehle `setPenColor` und `setPenThickness`
+- Versuche folgende Figur zu zeichnen.
+
+<img src="images/aufgaben01_08_thickness_and_color.png" alt="Aufgabe 6 Strichdicke" width="300">
