@@ -25,7 +25,7 @@ Wenn Du rechts oben auf den Pfeil nach unten klickst, sieht das so aus:
 
 <img src="images/02_downloads_folder.png" alt="Downloads" width="400">
 
-Wie im Bild dagestellt, gibt es ein Ordner Symbol rechts von "Downloads" bei dem "Downloadornder öffnen" erscheint, 
+Wie im Bild dargestellt, gibt es ein Ordner-Symbol rechts von "Downloads" bei dem "Downloadordner öffnen" erscheint, 
 wenn die Maus darüber ist. Damit bitte den Downloadordner öffnen.
 
 ---

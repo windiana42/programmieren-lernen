@@ -15,7 +15,7 @@
 
 - Starte die Schildkrötensteuerung (Menü Tools->Turtle Controller).
 - Male eine Figur, bei der die Schildkröte am Start wieder ankommt, aber leicht verdreht ist (z.B. 10 Grad verdreht).
-- Kopiere den Code vom Ausgabefenster(Output Pane) in den Programmierbearbeiter(Script Editor)  
+- Kopiere den Code vom Ausgabefenster (Output Pane) in den Programmierbearbeiter (Script Editor)  
   (Click Output Pane, Ctrl-A, Ctrl-C, Click Script Editor, Ctrl-A, Ctrl-V).
 - Wiederhole den Code (ohne `clear()`) so oft, dass eine Drehfigur entsteht (z.B. `repeat(36) { ... }`).
 - Programm kann beliebig oft gestartet werden mit dem grünen Pfeil im Script Editor.

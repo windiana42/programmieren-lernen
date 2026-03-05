@@ -62,7 +62,7 @@ Tipps:
 
 - Dieses Programm findet ihr in der Dokumentation allerdings mit einem anderen Wert bei ???.
 - Die Funktion `funktion_mit_parameter` hat einen Parameter `n`.
-- `n` steht für eine beliebige Pixel Anzahl, welche die Kantenlänge der Quadrate angibt: `Picture.rectangle(n, n)`
+- `n` steht für eine beliebige Pixelanzahl, welche die Kantenlänge der Quadrate angibt: `Picture.rectangle(n, n)`
 - `funktion_mit_parameter(250)` zeichnet also mindestens ein Quadrat der Seitenlänge 250.
 - Es zeichnet außerdem weitere Quadrate weil es sich selbst aufruft: `funktion_mit_parameter(n - ???)`
 - Die Seitenlänge des nächsten gezeichneten Quadrats ist daher um den Wert ??? geringer als `n`.
