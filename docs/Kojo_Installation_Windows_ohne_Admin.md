@@ -65,8 +65,8 @@ Rechtsklick auf **kojo.cmd** → **Im Editor bearbeiten**
 
 <img src="images/07_kojo_exe_start.png" alt="kojo.cmd öffnen" width="400">
 
-Dort steht eine Zeile mit einem Java-Pfad.  
-Ersetze den Java-Pfad durch diesen:
+Dort steht eine Zeile die mit `call java` beginnt.  
+Ersetze das `java` durch:
 
 `%USERPROFILE%\Downloads\microsoft-jdk-21.0.10-windows-x64\jdk-21.0.10+7\bin\java`
 
