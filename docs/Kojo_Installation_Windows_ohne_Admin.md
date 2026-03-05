@@ -21,9 +21,12 @@ Kojo braucht Java. Lade es hier herunter:
 
 Die Datei wird in deinem **Downloads-Ordner** gespeichert.
 
-So sieht das aus:
+Wenn Du rechts oben auf den Pfeil nach unten klickst, sieht das so aus:
 
 <img src="images/02_downloads_folder.png" alt="Downloads" width="400">
+
+Wie im Bild dagestellt, gibt es ein Ordner Symbol rechts von "Downloads" bei dem "Downloadornder öffnen" erscheint, 
+wenn die Maus darüber ist. Damit bitte den Downloadordner öffnen.
 
 ---
 
