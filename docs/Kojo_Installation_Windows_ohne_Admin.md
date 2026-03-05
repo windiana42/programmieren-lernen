@@ -72,7 +72,7 @@ Ersetze das `java` durch:
 
 So sieht das aus:
 
-<img src="images/05_kojo_cmd_edit.png" alt="kojo.cmd bearbeiten" width="400">
+<img src="images/05_kojo_cmd_edit.png" alt="kojo.cmd bearbeiten" width="700">
 
 ---
 
