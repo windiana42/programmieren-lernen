@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kojo Installation Windows ohne Admin</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kojo Installation Windows ohne Admin</h1>
+</header>
+<h1 id="kojo-installieren-auf-windows-ohne-admin-rechte">🐨 Kojo
+installieren auf Windows (ohne Admin-Rechte)</h1>
+<p>Hallo! 😊<br />
+Hier lernst du Schritt für Schritt, wie du Kojo installierst.</p>
+<hr />
+<h1 id="schritt-1-kojo-herunterladen">📥 Schritt 1: Kojo
+herunterladen</h1>
+<p>Lade Kojo herunter:<br />
+👉 <a
+href="https://github.com/litan/kojo/releases/download/2.9.34_release/Kojo_2_9_34.zip">Kojo_2_9_34.zip</a></p>
+<p>Die Datei wird in deinem <strong>Downloads-Ordner</strong>
+gespeichert.</p>
+<hr />
+<h1 id="schritt-2-java-herunterladen">☕ Schritt 2: Java
+herunterladen</h1>
+<p>Kojo braucht Java. Lade es hier herunter:<br />
+👉 <a
+href="https://aka.ms/download-jdk/microsoft-jdk-21.0.10-windows-x64.zip">microsoft-jdk-21.0.10-windows-x64.zip</a></p>
+<p>Die Datei wird in deinem <strong>Downloads-Ordner</strong>
+gespeichert.</p>
+<p>Wenn Du rechts oben auf den Pfeil nach unten klickst, sieht das so
+aus:</p>
+<p><img src="images/02_downloads_folder.png" alt="Downloads" width="400"></p>
+<p>Wie im Bild dargestellt, gibt es ein Ordner-Symbol rechts von
+“Downloads” bei dem “Downloadordner öffnen” erscheint, wenn die Maus
+darüber ist. Damit bitte den Downloadordner öffnen.</p>
+<hr />
+<h1 id="schritt-3-kojo-zip-entpacken">📦 Schritt 3: Kojo ZIP
+entpacken</h1>
+<p>Rechtsklick auf <strong>Kojo_2_9_34.zip</strong><br />
+Dann klicke auf <strong>Alle extrahieren…</strong></p>
+<p><img src="images/03_kojo_zip_rechtsklick.png" alt="Kojo ZIP" width="400"></p>
+<hr />
+<h1 id="schritt-4-java-zip-entpacken">☕ Schritt 4: Java ZIP
+entpacken</h1>
+<p>Rechtsklick auf
+<strong>microsoft-jdk-21.0.10-windows-x64.zip</strong><br />
+Dann klicke auf <strong>Alle extrahieren…</strong></p>
+<p><img src="images/04_jdk_zip_rechtsklick.png" alt="JDK ZIP" width="400"></p>
+<hr />
+<h1 id="schritt-5-kojo-ordner-öffnen">📁 Schritt 5: Kojo-Ordner
+öffnen</h1>
+<p>Gehe in den Ordner:<br />
+<code>%userprofile%\Downloads\Kojo_2_9_34\Kojo-z\bin</code></p>
+<p>So sieht der Ordner aus:</p>
+<p><img src="images/06_kojo_bin_pfad.png" alt="Kojo Speicherort" width="400"></p>
+<hr />
+<h1 id="schritt-6-kojo.cmd-bearbeiten">🛠 Schritt 6: kojo.cmd
+bearbeiten</h1>
+<p>Rechtsklick auf <strong>kojo.cmd</strong> → <strong>Im Editor
+bearbeiten</strong></p>
+<p><img src="images/07_kojo_exe_start.png" alt="kojo.cmd öffnen" width="400"></p>
+<p>Dort steht eine Zeile die mit <code>call java</code> beginnt.<br />
+Ersetze das <code>java</code> durch:</p>
+<p><code>%USERPROFILE%\Downloads\microsoft-jdk-21.0.10-windows-x64\jdk-21.0.10+7\bin\java</code></p>
+<p>So sieht das aus:</p>
+<p><img src="images/05_kojo_cmd_edit.png" alt="kojo.cmd bearbeiten" width="700"></p>
+<p><strong>Wichtig:</strong> Speichere die Datei
+<strong>kojo.cmd</strong>, bevor du den Editor schliesst. Gehe dazu im
+Menü auf <strong>Datei</strong> → <strong>Speichern</strong>.</p>
+<hr />
+<h1 id="schritt-7-kojo-starten">▶️ Schritt 7: Kojo starten</h1>
+<p>Doppelklicke auf <strong>kojo.cmd</strong> im selben Ordner. Kojo
+startet jetzt mit dem richtigen Java.</p>
+<hr />
+<h1 id="schritt-8-sprache-auf-englisch-umstellen-wichtig">🌍 Schritt 8:
+Sprache auf Englisch umstellen (wichtig)</h1>
+<p>Damit alle im Kurs dieselben Menüs und Begriffe sehen, stellen wir
+Kojo <strong>immer auf Englisch</strong> um.</p>
+<p>Klicke in Kojo auf: <strong>Sprache → Englisch</strong></p>
+<p><img src="images/08_sprache_englisch.png" alt="Sprache auf Englisch" width="200">
+<br>
+<img src="images/09_sprache_englisch_neustart.png" alt="Kojo neu starten nach Sprachwechsel" width="500"></p>
+<p>Danach musst du Kojo <strong>selbst schliessen</strong> und
+<strong>neu starten</strong>.</p>
+<hr />
+<h1 id="schritt-9-verknüpfung-auf-dem-desktop-erstellen">🔗 Schritt 9:
+Verknüpfung auf dem Desktop erstellen</h1>
+<p>Damit du Kojo schnell starten kannst, legst du eine Verknüpfung von
+<strong>kojo.cmd</strong> auf dem Desktop an.</p>
+<ol type="1">
+<li>Gehe in den Ordner:<br />
+<code>%userprofile%\Downloads\Kojo_2_9_34\Kojo-z\bin</code></li>
+<li><strong>Rechtsklick</strong> auf <strong>kojo.cmd</strong></li>
+<li>Wähle <strong>Senden an</strong> → <strong>Desktop (Verknüpfung
+erstellen)</strong></li>
+</ol>
+<p>Die Verknüpfung erscheint auf deinem Desktop. Du kannst Kojo von dort
+aus starten.</p>
+<hr />
+<h1 id="fertig">✅ Fertig!</h1>
+<p>Jetzt kannst du mit Kojo programmieren! 🎉</p>
+</body>
+</html>

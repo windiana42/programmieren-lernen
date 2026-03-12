@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Kojo Aufgaben01</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Kojo Aufgaben01</h1>
+</header>
+<h1 id="programmieren-mit-kojo">Programmieren mit Kojo</h1>
+<h2 id="aufgaben">Aufgaben</h2>
+<h3 id="aufgabe-1">Aufgabe 1</h3>
+<ul>
+<li>Starte das Anfängertraining (Menü Tools-&gt;Beginner
+Challenges).</li>
+<li>Löse Level 1</li>
+<li>Löse Level 7 und 8: das Quadrat mit und ohne
+<code>repeat(4) { ... }</code>.</li>
+</ul>
+<p><img src="images/aufgaben01_01_level7.png" alt="Aufgabe 1 - Level 7" width="400">
+<img src="images/aufgaben01_02_level8.png" alt="Aufgabe 1 - Level 8" width="400"></p>
+<h3 id="aufgabe-2">Aufgabe 2</h3>
+<ul>
+<li>Starte die Schildkrötensteuerung (Menü Tools-&gt;Turtle
+Controller).</li>
+<li>Male eine Figur, bei der die Schildkröte am Start wieder ankommt,
+aber leicht verdreht ist (z.B. 10 Grad verdreht).</li>
+<li>Kopiere den Code vom Ausgabefenster (Output Pane) in den
+Programmierbearbeiter (Script Editor)<br />
+(Click Output Pane, Ctrl-A, Ctrl-C, Click Script Editor, Ctrl-A,
+Ctrl-V).</li>
+<li>Wiederhole den Code (ohne <code>clear()</code>) so oft, dass eine
+Drehfigur entsteht (z.B. <code>repeat(36) { ... }</code>).</li>
+<li>Programm kann beliebig oft gestartet werden mit dem grünen Pfeil im
+Script Editor.</li>
+<li>Wenn Dir die Schildkröte zu langsam ist, kannst Du zu Aufgabe 3
+springen und danach nochmal schönere Drehfiguren produzieren.</li>
+</ul>
+<p><img src="images/aufgaben01_03_flag.png" alt="Aufgabe 2 - Figur" width="400"></p>
+<p><img src="images/aufgaben01_04_turn_figure.png" alt="Aufgabe 2 - Drehfigur" width="400"></p>
+<h3 id="aufgabe-3">Aufgabe 3</h3>
+<ul>
+<li>Starte die Dokumentation des Befehlsvorrats (Tools-&gt;Instruction
+Palette).</li>
+</ul>
+<p><img src="images/aufgaben01_05_turtle_commands.png" alt="Aufgabe 3 - Schildkrötenbefehle" width="400"></p>
+<ul>
+<li>Wähle “Live help: On”.</li>
+<li>Halte den Mauszeiger über den Turtle Befehl
+<code>setSpeed(s)</code>.</li>
+<li>Füge den Befehl <code>setSpeed(...)</code> in Dein Programm aus
+Aufgabe 2 ein, um die Geschwindigkeit der Schildkröte zu verändern. In
+der Dokumentation werden mögliche Werte genannt: “Possible values are
+…”. Probiere verschiedene Werte aus, um die Auswirkungen zu
+beobachten.</li>
+</ul>
+<h3 id="aufgabe-4">Aufgabe 4</h3>
+<p>Zeichne Dein eigenes Quadrat mit Hilfe des Befehlsvorrats. Verwende
+dabei den <code>forward</code>-Befehl nur einmal.</p>
+<p><img src="images/aufgaben01_06_square.png" alt="Aufgabe 5 - Verschachtelte Wiederholung" width="200"></p>
+<p>Tipps: - Verwende Wiederholung/repeat - Ganz oben im Befehlsvorrat
+gibt es “Flow” - Dort gibt es Hilfe zum Befehl
+<code>repeat [command]</code></p>
+<h3 id="aufgabe-5">Aufgabe 5</h3>
+<ul>
+<li>Zeichne Deine eigene Drehfigur mit Hilfe des Quadrats aus Aufgabe 4
+(z.B. durch <code>repeat</code> innerhalb
+<code>repeat(n) {...}</code>).</li>
+</ul>
+<p><img src="images/aufgaben01_07_turn_figure.png" alt="Aufgabe 5 - Verschachtelte Wiederholung" width="300"></p>
+<p>Tipps: - Die Wiederholungszahl mal der leichten Drehung sollte 360
+Grad ergeben (z.B. <code>repeat(30) { ... right(12) }</code>)</p>
+<h3 id="bonusaufgabe">Bonusaufgabe</h3>
+<p>Nutze den Befehlsvorrat, um herauszufinden wie Du Linienfarbe und
+Strichstärke veränderst.</p>
+<ul>
+<li>Halte die Maus über die Befehle <code>setPenColor</code> und
+<code>setPenThickness</code></li>
+<li>Versuche folgende Figur zu zeichnen.</li>
+</ul>
+<p><img src="images/aufgaben01_08_thickness_and_color.png" alt="Aufgabe 6 Strichdicke" width="300"></p>
+</body>
+</html>

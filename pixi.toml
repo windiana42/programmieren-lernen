@@ -1,0 +1,12 @@
+[workspace]
+authors = ["windiana42 <windiana@users.sf.net>"]
+channels = ["conda-forge"]
+name = "programmieren-lernen"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.3,<3.15"
+pandoc = ">=3.9,<4"
