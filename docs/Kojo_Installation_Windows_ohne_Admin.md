@@ -74,6 +74,8 @@ So sieht das aus:
 
 <img src="images/05_kojo_cmd_edit.png" alt="kojo.cmd bearbeiten" width="700">
 
+**Wichtig:** Speichere die Datei **kojo.cmd**, bevor du den Editor schliesst. Gehe dazu im Menü auf **Datei** → **Speichern**.
+
 ---
 
 # ▶️ Schritt 7: Kojo starten
@@ -92,7 +94,20 @@ Klicke in Kojo auf: **Sprache → Englisch**
 <br>
 <img src="images/09_sprache_englisch_neustart.png" alt="Kojo neu starten nach Sprachwechsel" width="500">
 
-Danach musst du Kojo **selbst schließen** und **neu starten**.
+Danach musst du Kojo **selbst schliessen** und **neu starten**.
+
+---
+
+# 🔗 Schritt 9: Verknüpfung auf dem Desktop erstellen
+
+Damit du Kojo schnell starten kannst, legst du eine Verknüpfung von **kojo.cmd** auf dem Desktop an.
+
+1. Gehe in den Ordner:  
+   `%userprofile%\Downloads\Kojo_2_9_34\Kojo-z\bin`
+2. **Rechtsklick** auf **kojo.cmd**
+3. Wähle **Senden an** → **Desktop (Verknüpfung erstellen)**
+
+Die Verknüpfung erscheint auf deinem Desktop. Du kannst Kojo von dort aus starten.
 
 ---
 
